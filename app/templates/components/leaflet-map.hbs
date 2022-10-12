@@ -1,0 +1,13 @@
+{{yield}}
+<div class="states-container">
+  <div class="search-container">
+    <p>Штаты</p>
+    {{input type="search" placeholder="Введите штат" value=search }}
+  </div>
+
+  <ul>
+    {{#each data as |feature|}}
+      <li class="{{if (eq activeState feature.properties.name) "active" ""}}" onclick={{action "setActiveState" feature.properties.name}}>{{feature.properties.name}}</li>
+    {{/each}}
+  </ul>
+</div>

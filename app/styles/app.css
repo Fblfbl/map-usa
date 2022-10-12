@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.map {
+  height: 100%;
+}
+
+.states-container {
+  z-index: 9999;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #fff;
+  /* height: 300px; */
+  padding: 0 15px 15px 15px;
+  /* overflow-y: scroll; */
+  border-radius: 5px;
+}
+
+.active {
+  background-color: bisque;
+}
+
+.leaflet-popup-content p {
+  margin: 0;
+}
+
+.popup-title {
+  margin-bottom: 5px !important;
+  font-weight: bold;
+}
+
+.states-container p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.states-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 69px;
+  overflow-y: scroll;
+  height: 250px;
+  width: 220px;
+}
+
+.states-container li {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.states-container li:hover {
+  background-color: coral;
+}
+
+.search-container {
+  padding-top: 15px;
+  position: fixed;
+  background-color: #fff;
+  /* height: 50px; */
+}
